@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-rcptt') {
+orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
   settings+: {
     description: "",
     name: "Eclipse RCPTT project",
