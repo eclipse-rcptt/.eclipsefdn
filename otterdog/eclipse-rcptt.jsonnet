@@ -16,6 +16,7 @@ orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
       code_scanning_default_setup_enabled: true,
       default_branch: "master",
       delete_branch_on_merge: false,
+      homepage: "https://eclipse.dev/rcptt/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -35,6 +36,7 @@ orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
+      homepage: "https://eclipse.dev/rcptt/",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
