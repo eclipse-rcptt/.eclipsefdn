@@ -31,6 +31,26 @@ orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
         },
       ],
     },
+    orgs.newRepo('rcptt-server') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      code_scanning_default_setup_enabled: true,
+      default_branch: "main",
+      delete_branch_on_merge: true,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      webhooks: [
+        orgs.newRepoWebhook('https://ci.eclipse.org/rcptt/github-webhook/') {
+          content_type: "json",
+          events+: [
+            "pull_request",
+            "push"
+          ],
+        },
+      ],
+    },
     orgs.newRepo('rcptt-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
