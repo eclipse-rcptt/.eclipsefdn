@@ -14,6 +14,9 @@ orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_setup_enabled: true,
+      code_scanning_default_languages: [
+        "actions",
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       homepage: "https://eclipse.dev/rcptt/",
@@ -35,6 +38,10 @@ orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_setup_enabled: true,
+      code_scanning_default_languages: [
+        "java-kotlin",
+        "javascript-typescript",
+      ],
       default_branch: "main",
       delete_branch_on_merge: true,
       web_commit_signoff_required: false,
