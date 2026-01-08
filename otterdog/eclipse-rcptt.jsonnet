@@ -62,7 +62,7 @@ orgs.newOrg('technology.rcptt', 'eclipse-rcptt') {
     orgs.newRepo('rcptt-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "master",
+      default_branch: "main",
       delete_branch_on_merge: false,
       homepage: "https://eclipse.dev/rcptt/",
       web_commit_signoff_required: false,
